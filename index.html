@@ -11,44 +11,44 @@
     <title>Jason | Web Developer</title>
   </head>
   <body>
-    <a href="#about">About</a>
-    <header class="l-header">
-      <nav class="nav bd-grid">
-          <div>
-              <a href="#" class="nav_logo">&#60;Jason Nham&#62;</a>
-          </div>
-          <div class="nav_menu" id="nav-menu">
-              <ul class="nav_list">
-                  <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-                  <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-                  <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-                  <li class="nav_item"><a href="#projects" class="nav_link">Portfolio</a></li>
-                  <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
-              </ul>
-          </div>
-          <div class="nav_toggle" id="nav-toggle">
-              <i class='bx bx-menu'></i>
-          </div>
+    <header>
+    <a href="#" class="nav_logo">&#60;Jason Nham&#62;</a>
+      <input type="checkbox" name="nav_toggle" id="nav_toggle" class="nav__toggle">
+      <nav>
+          <ul>
+              <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+              <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+              <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+              <li class="nav_item"><a href="#projects" class="nav_link">Portfolio</a></li>
+              <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+              <div class="animation start-home"></div>
+          </ul>
       </nav>
+      <label for="nav_toggle" class="nav__toggle--label">
+        <span></span>
+      </label>
   </header>
 
     <!-- INTRODUCTION -->
     <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">Hi there! I'm <strong>Jason Nham</strong></h1>
+      <div class="test">
+        <h1 class="section__title section__title--intro">Hi there! I'm <strong>Jason Nham</strong></h1>
       <p class="section__subtitle section__subtitle--intro">front-end developer</p>
+      </div>
       <div class="section__buttons">
-        <button class="section__button intro__button">Resume</button>
-        <button class="section__button intro__button">Let's talk!</button>
+        <!-- <a href="contact" download="git.png"class="section__button intro__button">Resume</a> -->
+        <a href="#contact" class="section__button intro__button">Resume</a>
+        <a href="#contact" class="section__button intro__button">Let's talk!</a>
       </div>
     </section>
 
 
     <!-- ABOUT -->
     <section class="about-me" id="about">
-      <header>
+      <div class="about__me--header">
         <h1 class="section__title section__title--about">Who I am</h1>
         <p class="section__subtitle section__subtitle--about"> Developer | Student | Gamer | Adventurer</p>
-      </header>
+      </div>
       <div class="about-me__body">
         <p>I'm 21 years old, and a junior Software Engineering student at Miami University of Ohio.
         </p>
@@ -137,7 +137,7 @@
       </div>
       <div class="portfolio">
         <a href="https://www.jasonnham.com/" class="card">
-          <h2 class="card__title">Todo List</h2>
+          <h2 class="card__title">Personal website</h2>
           <img src="images/projects/personal_website.png" alt="todo list" class="portfolio__img">
           <p>My first website using HTML, CSS and Javascript</p>
         </a>
@@ -189,7 +189,7 @@
               </div>
               <div class="section__info--details">
                 <img src="images/phone.png" class="social__icon--contact" alt="phone">
-                <p>(740) 442-2001</p>
+                <a href="tel:740-442-2001">(740) 442-2001</a>
               </div>
             </div>
             <div class="contact__socials">
